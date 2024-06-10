@@ -10,9 +10,9 @@ const double defaultPadding = 16.0;
 
 
 enum DeviceType {
-  Small,
-  Medium,
-  Large
+  small,
+  medium,
+  large
 }
 
 DeviceType get deviceType {
@@ -22,10 +22,10 @@ DeviceType get deviceType {
   var screenSize = MediaQuery.of(context).size;
 
   if (screenSize.width < breakpointSmall) {
-    return DeviceType.Small;
+    return DeviceType.small;
   } else if (screenSize.width < breakpointMedium) {
-    return DeviceType.Medium;
+    return DeviceType.medium;
   } else {
-    return DeviceType.Large;
+    return DeviceType.large;
   }  
 }

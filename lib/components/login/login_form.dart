@@ -6,8 +6,8 @@ import 'package:finance_app/pages/signup_screen.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

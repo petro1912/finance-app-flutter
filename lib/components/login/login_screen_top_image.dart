@@ -4,8 +4,8 @@ import 'package:finance_app/config.dart';
 
 class LoginScreenTopImage extends StatelessWidget {
   const LoginScreenTopImage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
