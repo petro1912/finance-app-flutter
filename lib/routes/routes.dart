@@ -13,10 +13,6 @@ Map<String, WidgetBuilder> get routes {
   };
 }
 
-void navigateTo(String routeName) {
-  BuildContext context = App.navigatorKey
-                            .currentState!
-                            .context;
-
+void navigateTo(BuildContext context, String routeName) {
   Navigator.pushNamed(context, routeName);
 }

@@ -1,3 +1,4 @@
+import 'package:finance_app/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:finance_app/components/custom/already_have_an_account_acheck.dart';
 import 'package:finance_app/config.dart';
@@ -50,14 +51,7 @@ class SignUpForm extends StatelessWidget {
           AlreadyHaveAnAccountCheck(
             login: false,
             press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return const LoginScreen();
-                  },
-                ),
-              );
+              navigateTo(context, "/login");
             },
           ),
         ],

@@ -1,3 +1,4 @@
+import 'package:finance_app/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:finance_app/config.dart';
 import 'package:finance_app/pages/login_screen.dart';
@@ -14,14 +15,7 @@ class LoginAndSignupBtn extends StatelessWidget {
       children: [
         ElevatedButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const LoginScreen();
-                },
-              ),
-            );
+            navigateTo(context, '/login');
           },
           child: Text(
             "Login".toUpperCase(),
@@ -30,14 +24,7 @@ class LoginAndSignupBtn extends StatelessWidget {
         const SizedBox(height: 16),
         ElevatedButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const SignUpScreen();
-                },
-              ),
-            );
+            navigateTo(context, '/register');
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: kPrimaryLightColor,
